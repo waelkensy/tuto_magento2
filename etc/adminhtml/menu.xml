@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Wlks_Formation::pointofsales" title="Point Of Sales" module="Wlks_Formation" sortOrder="51" resource="Magento_Sales::sales"/>
+        <add id="Wlks_Formation::manage_pointofsales" title="Manage Point Of Sales" module="Wlks_Formation" sortOrder="10" action="pointofsales/pointofsales/manage" resource="Magento_Sales::sales" parent="Wlks_Formation::pointofsales"/>
+    </menu>
+</config>

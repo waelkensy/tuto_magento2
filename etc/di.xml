@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Wlks\Formation\Api\Data\PointOfSalesInterface" type="Wlks\Formation\Model\PointOfSales"/>
+    <preference for="Wlks\Formation\Api\PointOfSalesRepositoryInterface" type="Wlks\Formation\Model\PointOfSalesRepository"/>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="pointofsales_listing_data_source" xsi:type="string">Wlks\Formation\Model\ResourceModel\PointOfSales\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Wlks\Formation\Model\ResourceModel\PointOfSales\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">point_of_sales</argument>
+            <argument name="resourceModel" xsi:type="string">Wlks\Formation\Model\ResourceModel\PointOfSales</argument>
+        </arguments>
+    </virtualType>
+</config>

@@ -56,8 +56,8 @@ Ce module est un exemple de réalisation de cette prouesse, il a été développ
 [Tuto Mage Plaza](https://www.mageplaza.com/magento-2-module-development/how-to-create-crud-model-magento-2.html)
 
 ##### Fichier concernés
-* [Model](/app/code/Wlks/Formation/Model)
-* [db_schema](/app/code/Wlks/Formation/etc/db_schema.xml)
+* [Model](Model)
+* [db_schema](etc/db_schema.xml)
 
 ***
 
@@ -73,10 +73,10 @@ En l'ocurrence ce sera le vu qu'on pourra gérer cette entité via API.
 <br>
 
 ##### Fichier concernés
-* [PointOfSalesRepository](/app/code/Wlks/Formation/Model/PointOfSalesRepository.php)
-* [PointOfSalesRepositoryInterface](/app/code/Wlks/Formation/Api/PointOfSalesRepositoryInterface.php)
-* [PointOfSalesInterface](/app/code/Wlks/Formation/Api/Data/PointOfSalesInterface.php)
-* [di.xml](/app/code/Wlks/Formation/etc/di.xml)
+* [PointOfSalesRepository](Model/PointOfSalesRepository.php)
+* [PointOfSalesRepositoryInterface](Api/PointOfSalesRepositoryInterface.php)
+* [PointOfSalesInterface](Api/Data/PointOfSalesInterface.php)
+* [di.xml](etc/di.xml)
 
 ***
 
@@ -86,18 +86,18 @@ En l'ocurrence ce sera le vu qu'on pourra gérer cette entité via API.
 2. Test des API avec le Swagger
 
 ##### Fichier concernés
-* [webapi](/app/code/Wlks/Formation/etc/webapi.xml)
-* [PointOfSalesRepositoryInterface](/app/code/Wlks/Formation/Api/PointOfSalesRepositoryInterface.php)
-* [PointOfSalesInterface](/app/code/Wlks/Formation/Api/Data/PointOfSalesInterface.php)
+* [webapi](etc/webapi.xml)
+* [PointOfSalesRepositoryInterface](Api/PointOfSalesRepositoryInterface.php)
+* [PointOfSalesInterface](Api/Data/PointOfSalesInterface.php)
 
 ***
 
 ####Etape 5 : Affichage de notre entités sur la page front
 
 ##### Fichier concernés
-* [Block/PointOfSales](/app/code/Wlks/Formation/Block/PointOfSales.php)
-* [front/view](/app/code/Wlks/Formation/view/frontend)
-* [PointOfSalesInterface](/app/code/Wlks/Formation/Api/Data/PointOfSalesInterface.php)
+* [Block/PointOfSales](Block/PointOfSales.php)
+* [front/view](view/frontend)
+* [PointOfSalesInterface](Api/Data/PointOfSalesInterface.php)
 
 ***
 
@@ -106,8 +106,8 @@ En l'ocurrence ce sera le vu qu'on pourra gérer cette entité via API.
 * [Tuto à suivre](https://inchoo.net/magento-2/admin-menu-item-magento-2/)
 
 #####Fichier concernés 
-* [etc/adminhtml](/app/code/Wlks/Formation/etc/adminhtml)
-* [PointOfSalesInterface](/app/code/Wlks/Formation/Api/Data/PointOfSalesInterface.php)
+* [etc/adminhtml](etc/adminhtml)
+* [PointOfSalesInterface](Api/Data/PointOfSalesInterface.php)
 
 ***
 
@@ -116,15 +116,15 @@ En l'ocurrence ce sera le vu qu'on pourra gérer cette entité via API.
 
 #####Création du controller : Fichier concernés 
 
-* [Controller](/app/code/Wlks/Formation/Controller/Adminhtml/PointOfSales/Manage.php)
-* [routes](/app/code/Wlks/Formation/etc/adminhtml/routes.xml)
-* [layout](/app/code/Wlks/Formation/view/adminhtml/layout/pointofsales_pointofsales_manage.xml)
-* [di.xml](/app/code/Wlks/Formation/etc/di.xml)
+* [Controller](Controller/Adminhtml/PointOfSales/Manage.php)
+* [routes](etc/adminhtml/routes.xml)
+* [layout](view/adminhtml/layout/pointofsales_pointofsales_manage.xml)
+* [di.xml](etc/di.xml)
 * [explication type & virtual type](https://magently.com/blog/magento-2-design-patterns-preferences-virtual-types/)
 
 #####Création de la grid : Fichier concernés 
 
-* [ui-component.xml](/app/code/Wlks/Formation/view/adminhtml/ui_component/pointofsales_listing.xml)
+* [ui-component.xml](view/adminhtml/ui_component/pointofsales_listing.xml)
 * [Tuto à suivre](https://magently.com/blog/custom-products-grid-base-xml/)
 
 

@@ -16,19 +16,13 @@ use Magento\Framework\View\Result\PageFactory;
  */
 class GetAll implements ActionInterface
 {
-    /**
-     * @var Collection
-     */
-    protected $pointOfSales;
 
     /** @var PageFactory */
     protected $resultPageFactory;
 
     public function __construct(
-        Collection $pointOfSalesCollection,
         PageFactory $resultPageFactory
     ) {
-        $this->pointOfSales      = $pointOfSalesCollection;
         $this->resultPageFactory = $resultPageFactory;
     }
 
